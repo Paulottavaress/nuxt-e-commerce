@@ -1,7 +1,16 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  compatibilityDate: '2024-11-01',
+  modules: [
+    '@nuxt/ui',
+    '@nuxt/icon',
+    '@nuxt/image',
+    '@vueuse/nuxt',
+    '@nuxt/fonts',
+    '@nuxt/eslint'
+  ],
+  compatibilityDate: '2025-04-18',
   devtools: { enabled: true },
+  css: ['~/assets/css/main.css'],
   app: {
     head: {
       title: 'Nuxt E-Commerce',
